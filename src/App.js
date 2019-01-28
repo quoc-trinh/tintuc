@@ -2,22 +2,36 @@ import React from "react";
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
 import "./App.css"
-import { Route, Link } from 'react-router-dom';
-import ListNewsCard from "./ListNewsCard";
-import { Home } from "./Home";
+import "antd/dist/antd.css";
+import { Layout, Menu, Breadcrumb } from 'antd';
+import ListNewsCard from './ListNewsCard';
+const { Header, Content, Footer, Sider } = Layout;
 
 class App extends React.Component {
   render() {
     return (
-      <div >
-        <div class="topnav">
-          <li class="active"><Link to="/">Home</Link></li>
-        </div>
-        <Route exact path="/" component={ListNewsCard} />
-      </div>
-
+      <Layout>
+        <Header>
+          <div className="logo" />
+          <Menu
+            theme="dark"
+            mode="horizontal"
+            defaultSelectedKeys={['2']}
+            style={{ lineHeight: '64px' }}
+          >
+            <Menu.Item key="1">News</Menu.Item>
+          </Menu>
+        </Header>
+        <Content style={{ padding: '0 50px' }}>
+          <div style={{ background: '#fff', padding: 24, minHeight: 280 }}><ListNewsCard /></div>
+        </Content>
+        <Footer style={{ textAlign: 'center' }}>
+          Ant Design ©2019 Created by Jbohnvn
+    </Footer>
+      </Layout>
     );
   }
 }
+
 
 export default App;
