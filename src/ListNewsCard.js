@@ -2,6 +2,17 @@ import React from "react";
 import Card from "./Card";
 import "./ListNewsCard.scss";
 
+class ListNewsCard extends React.Component {
+    render() {
+        const listItems = cardData.map((newsItem) => <Card cardData = {newsItem} />);
+        return (<div id="flex-container" className={"center"}>
+            {listItems}
+        </div>)
+    }
+}
+
+export default ListNewsCard;
+
 const cardData =  [
     {
         "feed": {
@@ -1989,14 +2000,3 @@ const cardData =  [
         "summary": "Tiền đạo đắt giá nhất lịch sử Arsenal, Pierre-Emerick Aubameyang đã lập cú đúp giúp họ đánh bại Burnley với tỉ số 3-1, qua đó cân bằng điểm số với đội hạng 4 ở Ngoại hạng Anh Chelsea và chỉ đứng dưới vì hiệu số bàn thắng thua.VIDEO: Shaqiri lập cú đúp, Liverpool ‘chôn vùi’ M.UVIDEO: Hàng thủ tệ hại, Arsenal đứt mạch 22 trận bất bạiVIDEO: Hazard tỏa sáng, Chelsea 'bỏ túi' 3 điểmVIDEO: Jesus lập cú đúp, Man City ‘vùi dập’ EvertonVIDEO: Khoảnh khắc ĐT Việt Nam nâng cao cúp vô địch AFF Cup"
     }
 ]
-
-class ListNewsCard extends React.Component {
-    render() {
-        const listItems = cardData.map((newsItem) => <Card cardData = {newsItem} />);
-        return (<div id="flex-container" className={"center"}>
-            {listItems}
-        </div>)
-    }
-}
-
-export default ListNewsCard;
