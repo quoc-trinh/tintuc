@@ -28,7 +28,7 @@ class ListNewsCard extends React.Component {
                 }
             } else {
                 for (let j = (4 * i) - 4; j < 4 * i; j++) {
-                    children.push(<Col xs={24} sm={4} md={6} lg={8} xl={10}><Card cardData={cardData1[j]} /></Col>)
+                    children.push(<Col xs={24} sm={16} md={12} lg={8} xl={4}><Card cardData={cardData1[j]} /></Col>)
                 }
             }
             table.push(<Row type="flex">{children}</Row>)
