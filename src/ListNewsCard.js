@@ -24,14 +24,14 @@ class ListNewsCard extends React.Component {
             let children = []
             if (i === rowCount) {
                 for (let j = (4 * i) - 4; j < 4 * (i - 1) + (cardData1.length % 4); j++) {
-                    children.push(<Col span={6}><Card cardData={cardData1[j]} /></Col>)
+                    children.push(<Col xs={24} sm={4} md={6} lg={8} xl={10}><Card cardData={cardData1[j]} /></Col>)
                 }
             } else {
                 for (let j = (4 * i) - 4; j < 4 * i; j++) {
-                    children.push(<Col span={6}><Card cardData={cardData1[j]} /></Col>)
+                    children.push(<Col xs={24} sm={4} md={6} lg={8} xl={10}><Card cardData={cardData1[j]} /></Col>)
                 }
             }
-            table.push(<Row gutter={16}>{children}</Row>)
+            table.push(<Row type="flex">{children}</Row>)
 
         }
         return table
@@ -42,3 +42,4 @@ class ListNewsCard extends React.Component {
 }
 
 export default ListNewsCard;
+

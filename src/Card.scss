@@ -8,11 +8,9 @@ body, html {
 }
 
 .card {
-  width:280px;
   display: block;
-  margin: 30px;
   transition: .25s;
-  
+  margin-bottom: 15px;
   &:hover {
    // box-shadow: 13px 37px 52px 7px rgba(240,216,240,1);
     cursor: pointer;
@@ -25,7 +23,6 @@ body, html {
 .card-header {
   height: 150px;
   width: 100%;
-  padding: 15px;
   width:100%;
   background-size:cover;
   color:#fff;

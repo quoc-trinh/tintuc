@@ -22,7 +22,7 @@ class App extends React.Component {
             <Menu.Item key="1">News</Menu.Item>
           </Menu>
         </Header>
-        <Content style={{ padding: '0 50px' }}>
+        <Content style={{ padding: '0 10px' }}>
           <div style={{ background: '#fff', padding: 24, minHeight: 280 }}><ListNewsCard /></div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>
