@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 const request = (options) => {
    
     
@@ -22,9 +24,8 @@ const request = (options) => {
     );
 };
 
-export function getAllPayItems() {
-    return request({
-        url: `https://api.recsys.opera.com/api/1.0/suggestions/list?country=vn&language=vi&timeline=true&count=40&page=0`,
-        method: 'GET'
-    });
+export function getAllPayItems(category) {
+
+    return axios.get(`https://api.recsys.opera.com/api/1.0/suggestions/list?language=vi&timeline=true&count=10&page=0&category=` + category);
+
 }

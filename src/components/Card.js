@@ -1,6 +1,5 @@
 import * as React from "react";
 import "./Card.scss";
-import { Route, Link } from "react-router-dom";
 
 
 class CardHeader extends React.Component {
@@ -47,7 +46,7 @@ class Card extends React.Component {
         return (
             cardData && <article className="card">
                 <CardHeader image={cardData.image.url} />
-                <CardBody title={cardData.title} text={cardData.summary} date={cardData.date_published} url={cardData.url}/>
+                <CardBody title={cardData.title} text={cardData.summary} date={cardData.date_published} url={cardData.url} />
             </article>
         )
     }
