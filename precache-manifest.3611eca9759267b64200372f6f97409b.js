@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "977835b5d3280eb5cc10",
-    "url": "/tintuc/static/css/main.fd6bc858.chunk.css"
+    "revision": "ab6e6db8ce9023d182e4",
+    "url": "/tintuc/static/css/main.1fc241be.chunk.css"
   },
   {
-    "revision": "977835b5d3280eb5cc10",
-    "url": "/tintuc/static/js/main.977835b5.chunk.js"
+    "revision": "ab6e6db8ce9023d182e4",
+    "url": "/tintuc/static/js/main.ab6e6db8.chunk.js"
   },
   {
     "revision": "27003653b37ef7288a64",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/tintuc/static/js/runtime~main.b3b54679.js"
   },
   {
-    "revision": "8616ba7f01669fb1bd03f797a6ee96a5",
+    "revision": "6b43916c36a0e5ae9f8d9093ffec1c7d",
     "url": "/tintuc/index.html"
   }
 ];

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/tintuc/precache-manifest.a41ac015d3654da4dfc38a523dd92725.js"
+  "/tintuc/precache-manifest.3611eca9759267b64200372f6f97409b.js"
 );
 
 workbox.clientsClaim();
