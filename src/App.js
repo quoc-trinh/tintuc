@@ -75,7 +75,6 @@ class App extends React.Component {
       onClick={this.handleClick}
       selectedKeys={[this.state.current]}
       mode={type}
-      style={{ lineHeight: '64px', margin: 'auto', width: '75%' }}
     >
       <Menu.Item key="tonghop">
         <Icon type="mail" />Tổng hợp
