@@ -9,7 +9,7 @@
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
     "gsap": "^2.0.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-icons-kit": "^1.2.1",
